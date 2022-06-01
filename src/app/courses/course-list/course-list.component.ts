@@ -20,7 +20,7 @@ export class CourseListComponent implements OnInit {
         code: 'ANG-3200',
         duration: 120,
         rating: 4.5,
-        releaseDate:'Janyary, 2, 2022'
+        releaseDate:'January, 2, 2022'
 
       },
       {
@@ -31,7 +31,7 @@ export class CourseListComponent implements OnInit {
         code: 'ANG-3200',
         duration: 120,
         rating: 4.5,
-        releaseDate:'Janyary, 2, 2022'
+        releaseDate:'January, 2, 2022'
 
       }
     ]
