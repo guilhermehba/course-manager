@@ -1,7 +1,7 @@
 <h1>Course Info</h1>
 
 <hr />
-<form class="form" #courseForm="ngForm">
+<form class="form" #courseForm="ngForm" *ngIf="course">
   <div class="form-group">
     <label for="inputCourse" class="col-sm-2 col-form-label">Name</label>
     <div class="col-sm-12">
