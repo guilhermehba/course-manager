@@ -1,0 +1,12 @@
+button{
+  margin: 15px;
+  width: 100px;
+}
+.button{
+  text-align: center;
+}
+.form{
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+}

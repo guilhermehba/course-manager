@@ -1,4 +1,5 @@
 .crop{
   overflow: hidden;
   color: gold;
+  text-shadow: 0 0 3px black;
 }
