@@ -22,7 +22,12 @@ this.courseService.retrieveById(+(this.activatedRoute.snapshot.paramMap.get('id'
 })
   }
   save():void{
-    this.courseService.save(this.course)
+    this.courseService.save(this.course).subscribe({
+      next: course=> console.log('Salvo com sucesso', course),
+      error: err=> console.log('error', err)
+
+
+    })
   }
 
 }

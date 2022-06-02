@@ -29,6 +29,17 @@ export class CourseListComponent implements OnInit {
 
     });
   }
+
+  delete(courseId:number){
+    this.courseService.deleteByUrl(courseId).subscribe({
+      next: ()=> {
+        console.log('Deletado com Sucesso:')
+        this.retrieveAll()
+
+      }
+    })
+  }
+
   set filter(value: string) {
     this._filterBy = value;
 

@@ -8,6 +8,7 @@
       <input
         [(ngModel)]="course.name"
         required
+        id="inputCourse"
         name="name"
         #courseName="ngModel"
         [ngClass]="{ 'is-invalid': courseName.invalid }"
@@ -20,11 +21,12 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="inputCourse" class="col-sm-2 col-form-label">Price</label>
+    <label for="coursePrice" class="col-sm-2 col-form-label">Price</label>
     <div class="col-sm-12">
       <input
         [(ngModel)]="course.price"
         required
+        id="coursePrice"
         name="Price"
         #coursePrice="ngModel"
         [ngClass]="{ 'is-invalid': coursePrice.invalid }"
@@ -37,11 +39,12 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="inputCourse" class="col-sm-2 col-form-label">Rating</label>
+    <label for="courseRating" class="col-sm-2 col-form-label">Rating</label>
     <div class="col-sm-12">
       <input
         [(ngModel)]="course.rating"
         required
+        id="courseRating"
         name="rating"
         #courseRating="ngModel"
         [ngClass]="{ 'is-invalid': courseRating.invalid }"
@@ -54,11 +57,12 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="inputCourse" class="col-sm-2 col-form-label">Description</label>
+    <label for="courseDescription" class="col-sm-2 col-form-label">Description</label>
     <div class="col-sm-12">
       <textarea
         [(ngModel)]="course.description"
         required
+        id="courseDescription"
         name="description"
         #courseDescription="ngModel"
         [ngClass]="{ 'is-invalid': courseDescription.invalid }"
