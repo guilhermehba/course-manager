@@ -27,6 +27,9 @@ export class CourseService {
   deleteByUrl(id:number):Observable<any>{
     return this.httpClient.delete<any>(`${this.coursesUrl}/${id}`)
   }
+  add(course: Course):Observable<Course>{
+    return this.httpClient.post<Course>(`${this.coursesUrl}`, course)
+  }
 
 
 }
