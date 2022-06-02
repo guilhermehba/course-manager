@@ -2,7 +2,7 @@ import { CoursesInfoComponent } from './courses/courses-info/courses-info.compon
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CourseListComponent } from './courses/course-list/course-list.component';
-import { Error404Component } from './error404/error404.component';
+import { Error404Component } from './shared/component/error404/error404.component';
 
 const routes: Routes = [
   {

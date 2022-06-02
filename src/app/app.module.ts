@@ -1,5 +1,6 @@
+import { CoreModule } from './core/core.module';
 import { CourseModule } from './courses/course.module';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from './core/component/nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -12,7 +13,6 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    CourseModule
+    CourseModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],
