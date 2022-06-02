@@ -20,7 +20,6 @@ import { AppPipeModule } from '../shared/pipe/app-pipe.module';
    RouterModule,
    CommonModule,
    StarModule,
-   Error404Module,
    AppPipeModule,
 
   ]
